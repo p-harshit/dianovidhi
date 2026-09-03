@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dianovidhi | Intellectual Property Law</title>
+    <title>Diano-Vidhi | Intellectual Property Law</title>
     <style>
-        /* CSS STYLES - Premium Kirkland & Fish Inspired Palette */
+        /* CSS STYLES - Premium Palette */
         :root {
             --primary-navy: #00264d;
             --accent-slate: #005073;
@@ -22,8 +22,8 @@
             line-height: 1.6;
         }
 
-        h1, h2, h3 {
-            font-family: 'Georgia', serif; /* Serif font for authoritative legal feel */
+        h1, h2, h3, h4 {
+            font-family: 'Georgia', serif; 
             font-weight: normal;
         }
 
@@ -35,6 +35,9 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid var(--primary-navy);
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
 
         .logo {
@@ -94,6 +97,111 @@
             margin-bottom: 40px;
         }
 
+        /* Insights & News Grid */
+        .insights-grid {
+            display: flex;
+            gap: 50px;
+        }
+
+        .news-column, .linkedin-column {
+            flex: 1;
+        }
+
+        .news-column h3, .linkedin-column h3 {
+            font-size: 24px;
+            color: var(--primary-navy);
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* News Items */
+        .news-item {
+            margin-bottom: 30px;
+        }
+
+        .news-item .date {
+            font-size: 12px;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .news-item h4 {
+            margin: 8px 0;
+            font-size: 20px;
+        }
+
+        .news-item h4 a {
+            color: var(--primary-navy);
+            text-decoration: none;
+        }
+
+        .news-item h4 a:hover {
+            color: var(--accent-slate);
+            text-decoration: underline;
+        }
+        
+        .news-item p {
+            font-size: 15px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* LinkedIn Posts */
+        .linkedin-post {
+            background: var(--light-bg);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+        }
+
+        .linkedin-post:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            color: var(--primary-navy);
+            font-family: sans-serif;
+        }
+
+        .badge {
+            background: #0077b5;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .post-content {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .read-more {
+            font-size: 14px;
+            color: var(--accent-slate);
+            text-decoration: none;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
         /* Attorney Profile */
         .attorney-profile {
             display: flex;
@@ -111,7 +219,7 @@
         .contact-box {
             background-color: var(--primary-navy);
             color: var(--white);
-            padding: 40px;
+            padding: 60px 20px;
             text-align: center;
         }
 
@@ -126,26 +234,42 @@
             background-color: #1a1a1a;
             color: #ccc;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             font-size: 14px;
         }
 
         .visitor-counter {
-            margin-top: 10px;
+            margin-top: 15px;
             font-family: monospace;
             background: #333;
-            padding: 5px 10px;
+            padding: 8px 15px;
             border-radius: 4px;
             display: inline-block;
+            font-size: 16px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .insights-grid {
+                flex-direction: column;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">DIANOVIDHI</a>
+        <a href="#" class="logo">DIANO-VIDHI</a>
         <nav>
-            <a href="#about">About the Firm</a>
+            <a href="#about">About</a>
+            <a href="#insights">Insights</a>
             <a href="#attorney">Our People</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -156,13 +280,4 @@
         <p>A boutique Intellectual Property law firm protecting your most valuable global assets.</p>
     </div>
 
-    <div id="about" class="section-container">
-        <h2 class="section-title">About Dianovidhi</h2>
-        <p>At Dianovidhi, we bridge the gap between creation and protection. The name reflects our core philosophy—merging intellectual innovation with the authority of the law. We specialize in patent prosecution, trademark registration, and IP litigation, ensuring that our clients' brilliant ideas remain securely their own in an increasingly competitive global market.</p>
-    </div>
-
-    <div id="attorney" class="section-container">
-        <h2 class="section-title">Leadership</h2>
-        <div class="attorney-profile">
-            <div class="attorney-bio">
-                <h3>Harshit Parasher
+    <div id="about" class="section-
